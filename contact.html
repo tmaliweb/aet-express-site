@@ -18,7 +18,7 @@
 <div id="loading" class="page-loader-wrapper">
     <div class="loader">
         <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/loader.svg" width="48" height="48" alt="Loading"></div>
-        <p>AET Express</p>
+        <p>AET Transportation</p>
     </div>
 </div>
 
@@ -30,12 +30,12 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-sm-5">
                             <div class="left">
-                                <a href="index.html" class="navbar-brand"><img src="assets/images/logo.png" alt="AET Express" style="max-height:52px;"></a>
+                                <a href="index.html" class="navbar-brand"><img src="https://www.aetdirectexpress.com/wp-content/uploads/2025/06/logo.png" alt="AET Transportation" style="max-height:52px;"></a>
                             </div>
                         </div>
                         <div class="col-lg-8 col-sm-7">
                             <div class="text-right d-none d-md-block">
-                                <p class="col-white m-b-0 p-t-5"><i class="zmdi zmdi-time"></i> Mon–Sun: 9am–5pm</p>
+                                <p class="col-white m-b-0 p-t-5"><i class="zmdi zmdi-time"></i> Monday–Sunday: 9:00 AM – 5:00 PM</p>
                                 <p class="col-white m-b-0"><i class="zmdi zmdi-pin"></i> P.O. Box 3743, Texas 77347 &nbsp;&nbsp; <i class="zmdi zmdi-phone"></i> 1-281-436-0205</p>
                             </div>
                         </div>
@@ -59,10 +59,6 @@
                             <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="social float-md-right">
-                        <a href="#" aria-label="Facebook"><i class="zmdi zmdi-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="zmdi zmdi-instagram"></i></a>
-                    </div>
                 </nav>
             </div>
         </div>
@@ -70,7 +66,7 @@
 
     <!-- ========== INNER BANNER ========== -->
     <section id="hero">
-        <div class="slider" style="background-image:url(assets/images/hero-cruise.jpg)">
+        <div class="slider" style="background-image:url(https://www.aetdirectexpress.com/wp-content/uploads/2025/06/0-bc831e61-ad6c-4513-ad20-d9dae689e364-1080x600.jpg)">
             <div class="hero-decoration hero-ring"></div>
             <div class="hero-decoration hero-dot hero-dot-1"></div>
             <div class="hero-decoration hero-dot hero-dot-2"></div>
@@ -100,44 +96,50 @@
                 <div class="row justify-content-between">
                     <div class="col-lg-7 col-md-7" data-aos="fade-up" data-aos-delay="100">
                         <div class="contact-form">
-                            <h4 class="appoitntment-title">Request a Booking</h4>
-                            <form action="mailto:customercare@aetdirectexpress.com" method="post" enctype="text/plain">
+                            <h3 class="appoitntment-title">Send Us a Message</h3>
+                            <form action="https://formspree.io/f/customercare" method="POST">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Your Email" required>
+                                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="tel" class="form-control" placeholder="Phone Number">
+                                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <select class="form-control">
+                                            <select name="service" class="form-control">
                                                 <option value="" disabled selected>Select Service Type</option>
                                                 <option value="twic">TWIC Escort</option>
                                                 <option value="cruise">Cruise Transport</option>
                                                 <option value="airport">Airport Transfer</option>
                                                 <option value="hotel">Hotel Transfer</option>
-                                                <option value="event">Special Event</option>
-                                                <option value="general">General Transportation</option>
+                                                <option value="funeral">Funeral Escort</option>
+                                                <option value="stadium">Stadium &amp; Events</option>
+                                                <option value="general">General Inquiry</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="5" placeholder="Tell us about your trip — pickup location, destination, date, number of passengers, and any special requirements."></textarea>
+                                            <input type="date" name="date" class="form-control" placeholder="Date of Service">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary btn-round">Send Request</button>
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your trip — pickup location, destination, date, number of passengers, and any special requirements."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary btn-round">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -148,20 +150,32 @@
                             <h4>Quick Contact</h4>
                             <p>Ready to book your ride or have a question? Reach out to us — our team is available Monday through Sunday, 9:00 AM – 5:00 PM to assist you.</p>
                             <ul class="list-unstyled">
-                                <li><i class="zmdi zmdi-pin"></i> P.O. Box 3743, Texas 77347</li>
-                                <li><i class="zmdi zmdi-phone"></i> 1-281-436-0205</li>
-                                <li><i class="zmdi zmdi-email"></i> customercare@aetdirectexpress.com</li>
-                                <li><i class="zmdi zmdi-time"></i> Monday–Sunday: 9:00 AM – 5:00 PM</li>
+                                <li style="padding:10px 0;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);">
+                                    <i class="zmdi zmdi-phone" style="color:var(--emerald);font-size:18px;flex-shrink:0;"></i>
+                                    <span>1-281-436-0205</span>
+                                </li>
+                                <li style="padding:10px 0;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);">
+                                    <i class="zmdi zmdi-email" style="color:var(--emerald);font-size:18px;flex-shrink:0;"></i>
+                                    <span>customercare@aetdirectexpress.com</span>
+                                </li>
+                                <li style="padding:10px 0;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);">
+                                    <i class="zmdi zmdi-pin" style="color:var(--emerald);font-size:18px;flex-shrink:0;"></i>
+                                    <span>P.O. Box 3743, Texas 77347</span>
+                                </li>
+                                <li style="padding:10px 0;display:flex;align-items:center;gap:12px;">
+                                    <i class="zmdi zmdi-time" style="color:var(--emerald);font-size:18px;flex-shrink:0;"></i>
+                                    <span>Monday – Sunday: 9:00 AM – 5:00 PM</span>
+                                </li>
                             </ul>
-                            <div style="margin-top:28px;">
-                                <h5 style="color:var(--white-70);font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;">Services We Offer</h5>
+                            <div style="margin-top:32px;">
+                                <h5 style="color:var(--white-70);font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;">Services We Offer</h5>
                                 <ul class="list-unstyled" style="color:var(--white-50);font-size:.9rem;">
-                                    <li style="padding:4px 0;"><i class="zmdi zmdi-badge" style="color:var(--emerald);margin-right:8px;"></i> TWIC Escort</li>
-                                    <li style="padding:4px 0;"><i class="zmdi zmdi-boat" style="color:var(--emerald);margin-right:8px;"></i> Cruise Transport (Galveston)</li>
-                                    <li style="padding:4px 0;"><i class="zmdi zmdi-airplane" style="color:var(--emerald);margin-right:8px;"></i> Airport Transfers (IAH &amp; Hobby)</li>
-                                    <li style="padding:4px 0;"><i class="zmdi zmdi-hotel" style="color:var(--emerald);margin-right:8px;"></i> Hotel Transfers</li>
-                                    <li style="padding:4px 0;"><i class="zmdi zmdi-calendar" style="color:var(--emerald);margin-right:8px;"></i> Special Events</li>
-                                    <li style="padding:4px 0;"><i class="zmdi zmdi-car" style="color:var(--emerald);margin-right:8px;"></i> General Transportation</li>
+                                    <li style="padding:5px 0;"><i class="zmdi zmdi-security" style="color:var(--emerald);margin-right:10px;"></i> TWIC Escort</li>
+                                    <li style="padding:5px 0;"><i class="zmdi zmdi-boat" style="color:var(--emerald);margin-right:10px;"></i> Cruise Transport (Galveston)</li>
+                                    <li style="padding:5px 0;"><i class="zmdi zmdi-airplane" style="color:var(--emerald);margin-right:10px;"></i> Airport Transfers (IAH &amp; HOU)</li>
+                                    <li style="padding:5px 0;"><i class="zmdi zmdi-hotel" style="color:var(--emerald);margin-right:10px;"></i> Hotel Transfers</li>
+                                    <li style="padding:5px 0;"><i class="zmdi zmdi-flower" style="color:var(--emerald);margin-right:10px;"></i> Funeral Escort</li>
+                                    <li style="padding:5px 0;"><i class="zmdi zmdi-flag" style="color:var(--emerald);margin-right:10px;"></i> Stadium &amp; Events</li>
                                 </ul>
                             </div>
                         </div>
@@ -194,7 +208,9 @@
                             <li><a href="services.html">TWIC Escort</a></li>
                             <li><a href="services.html">Cruise Transport</a></li>
                             <li><a href="services.html">Airport Transfers</a></li>
-                            <li><a href="services.html">Special Events</a></li>
+                            <li><a href="services.html">Hotel Transfers</a></li>
+                            <li><a href="services.html">Funeral Escort</a></li>
+                            <li><a href="services.html">Stadium &amp; Events</a></li>
                         </ul>
                     </div>
                 </div>
@@ -203,7 +219,8 @@
                         <h5 class="title">Houston &amp; Galveston, Texas</h5>
                         <i class="zmdi zmdi-pin"></i> P.O. Box 3743, Texas 77347<br>
                         <i class="zmdi zmdi-phone"></i> 1-281-436-0205<br>
-                        <i class="zmdi zmdi-time"></i> Mon–Sun: 9am–5pm
+                        <i class="zmdi zmdi-email"></i> customercare@aetdirectexpress.com<br>
+                        <i class="zmdi zmdi-time"></i> Mon–Sun: 9:00 AM – 5:00 PM
                     </div>
                 </div>
             </div>
@@ -211,14 +228,9 @@
         <div class="copyright">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6"><small>&copy; 2026 AET Transportation. All rights reserved.</small></div>
+                    <div class="col-lg-8 col-md-8"><small>&copy; 2026 AET Transportation. All rights reserved.</small></div>
                     <div class="col-lg-2 col-md-2 text-center"><div class="up"><a href="#header"><i class="zmdi zmdi-caret-up-circle"></i></a></div></div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="social float-md-right">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                        </div>
-                    </div>
+                    <div class="col-lg-2 col-md-2"></div>
                 </div>
             </div>
         </div>
