@@ -74,29 +74,79 @@
         </div>
     </div>
 
-    <!-- ========== HERO ========== -->
+    <!-- ========== HERO CAROUSEL ========== -->
     <section id="hero">
-        <div class="slider" style="background-image:url(https://www.aetdirectexpress.com/wp-content/uploads/2020/04/aetexpress-slide-2.jpg)">
-            <div class="hero-decoration hero-ring"></div>
-            <div class="hero-decoration hero-ring-inner"></div>
-            <div class="hero-decoration hero-dot hero-dot-1"></div>
-            <div class="hero-decoration hero-dot hero-dot-2"></div>
-            <div class="hero-decoration hero-dot hero-dot-3"></div>
-            <div class="container">
-                <div class="slider_text" data-aos="fade-up" data-aos-duration="1200">
-                    <h3 class="title"><span>Houston &amp; Galveston Transportation</span>
-                        Everywhere <strong>You Need to Go.</strong></h3>
-                    <div class="hero-accent-line"></div>
-                    <p class="sub-title">Whether a hotel, a cruise, an airport or a special event, we can simplify your solution.</p>
-                    <div>
-                        <a href="contact.html" class="btn btn-primary btn-round" style="margin-top:28px;">Reserve Now</a>
-                    </div>
-                    <div style="margin-top:32px;">
-                        <span class="hero-badge"><i class="zmdi zmdi-shield-check"></i> Licensed &amp; Insured</span>
-                        <span class="hero-badge"><i class="zmdi zmdi-time"></i> Mon–Sun 9am–5pm</span>
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active slider" style="background-image:url(https://www.aetdirectexpress.com/wp-content/uploads/2020/04/aetexpress-slide-2.jpg)">
+                    <div class="hero-decoration hero-ring"></div>
+                    <div class="hero-decoration hero-ring-inner"></div>
+                    <div class="hero-decoration hero-dot hero-dot-1"></div>
+                    <div class="hero-decoration hero-dot hero-dot-2"></div>
+                    <div class="hero-decoration hero-dot hero-dot-3"></div>
+                    <div class="container">
+                        <div class="slider_text hero-loaded">
+                            <h3 class="title"><span>Houston &amp; Galveston Transportation</span>
+                                Everywhere <strong>You Need to Go.</strong></h3>
+                            <div class="hero-accent-line"></div>
+                            <p class="sub-title">Whether a hotel, a cruise, an airport or a special event, we can simplify your solution.</p>
+                            <div><a href="contact.html" class="btn btn-primary btn-round" style="margin-top:28px;">Reserve Now</a></div>
+                            <div style="margin-top:32px;">
+                                <span class="hero-badge"><i class="zmdi zmdi-shield-check"></i> Licensed &amp; Insured</span>
+                                <span class="hero-badge"><i class="zmdi zmdi-time"></i> Mon–Sun 9am–5pm</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item slider" style="background-image:url(https://www.aetdirectexpress.com/wp-content/uploads/2019/01/direct-express-transportation.jpg)">
+                    <div class="container">
+                        <div class="slider_text hero-loaded">
+                            <h3 class="title"><span>Direct Express</span>
+                                Professional <strong>Transportation</strong></h3>
+                            <div class="hero-accent-line"></div>
+                            <p class="sub-title">Reliable travel and privacy direct express to your location. Serving Houston, Galveston, La Porte, Bay Port, and Seabrook.</p>
+                            <div><a href="services.html" class="btn btn-primary btn-round" style="margin-top:28px;">Our Services</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item slider" style="background-image:url(https://www.aetdirectexpress.com/wp-content/uploads/2019/01/twic-excort-services.jpg)">
+                    <div class="container">
+                        <div class="slider_text hero-loaded">
+                            <h3 class="title"><span>Port of Houston</span>
+                                TWIC Escort <strong>Services</strong></h3>
+                            <div class="hero-accent-line"></div>
+                            <p class="sub-title">Authorized and licensed TWIC escort services for contractors and personnel requiring secure port access.</p>
+                            <div><a href="contact.html" class="btn btn-primary btn-round" style="margin-top:28px;">Get Started</a></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev"
+               style="width:60px;height:60px;background:var(--bg-glass);border:1px solid var(--border);border-radius:50%;top:50%;transform:translateY(-50%);left:24px;backdrop-filter:blur(12px);">
+                <i class="zmdi zmdi-chevron-left" style="font-size:24px;color:var(--white-70);"></i>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next"
+               style="width:60px;height:60px;background:var(--bg-glass);border:1px solid var(--border);border-radius:50%;top:50%;transform:translateY(-50%);right:24px;backdrop-filter:blur(12px);">
+                <i class="zmdi zmdi-chevron-right" style="font-size:24px;color:var(--white-70);"></i>
+            </a>
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators" style="bottom:30px;">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active" style="width:8px;height:8px;border-radius:50%;background:var(--emerald);border:none;"></li>
+                <li data-target="#heroCarousel" data-slide-to="1" style="width:8px;height:8px;border-radius:50%;background:var(--white-30);border:none;"></li>
+                <li data-target="#heroCarousel" data-slide-to="2" style="width:8px;height:8px;border-radius:50%;background:var(--white-30);border:none;"></li>
+            </ol>
         </div>
     </section>
 
