@@ -339,7 +339,7 @@ select.form-control option { background: var(--bg-card); color: var(--white-70);
   .inner-banner-eyebrow { font-size: .6rem; }
   /* Constrain tall images on mobile */
   .img-frame { max-height: 280px !important; overflow: hidden; }
-  .img-frame img { height: 280px !important; width: 100%; object-fit: cover; object-position: center top; }
+  .img-frame img { height: 280px !important; width: 100%; object-fit: cover; object-position: center 60%; }
   /* Feature boxes */
   .feature-box { background: rgba(16,185,129,.07); border-color: rgba(16,185,129,.25); }
   /* Service cards */
