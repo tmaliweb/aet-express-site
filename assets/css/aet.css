@@ -224,7 +224,7 @@ img { max-width: 100%; height: auto; display: block; }
 .testimonial-author { font-family: var(--font-display); color: var(--rose-light); font-style: italic; font-size: 1.05rem; font-weight: 500; }
 
 /* ── INNER BANNER (subpages) ── */
-.inner-banner { min-height: 55vh; display: flex; align-items: center; background-size: cover; background-position: center; position: relative; overflow: hidden; }
+.inner-banner { min-height: 65vh; display: flex; align-items: center; background-size: cover; background-position: center; position: relative; overflow: hidden; }
 .inner-banner::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,10,10,.85) 0%, rgba(10,10,10,.6) 60%, rgba(10,10,10,.8) 100%); z-index: 1; }
 .inner-banner::after { content: ''; position: absolute; width: 400px; height: 400px; left: -100px; bottom: -200px; background: radial-gradient(circle, rgba(16,185,129,.08) 0%, transparent 70%); z-index: 1; pointer-events: none; }
 .inner-banner .container { position: relative; z-index: 2; }
