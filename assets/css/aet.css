@@ -147,7 +147,7 @@ img { max-width: 100%; height: auto; display: block; }
 .trust-label { font-family: var(--font-body); font-size: .65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 3px; color: rgba(255,255,255,0.4); }
 
 /* ── SECTION COMMON ── */
-.section { padding: 120px 0; }
+.section { padding: 120px 0; background: var(--bg); }
 .section-alt { background: var(--bg-raised); position: relative; }
 .section-alt::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(var(--white-04) 1px, transparent 1px), linear-gradient(90deg, var(--white-04) 1px, transparent 1px); background-size: 80px 80px; pointer-events: none; mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%); }
 .section-eyebrow { display: block; font-family: var(--font-body); font-size: .68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; color: var(--emerald); margin-bottom: 14px; }
