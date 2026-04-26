@@ -1,290 +1,289 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="AET Transportation services — TWIC escort, cruise terminal transport, airport transfers, executive limousines, shuttle service, and more in Houston and Galveston, Texas.">
-    <title>Services - AET Transportation</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/plugins/aos/aos.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/redesign.css">
-    <style>
-        .service-icon-zmdi{width:72px;height:72px;margin:0 auto 28px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:50%;transition:all var(--t);}
-        .service-icon-zmdi .zmdi{font-size:28px;color:var(--white-50);transition:all var(--t);}
-        .service-box:hover .service-icon-zmdi{border-color:var(--emerald);background:var(--emerald-glow);box-shadow:0 0 30px var(--emerald-glow);}
-        .service-box:hover .service-icon-zmdi .zmdi{color:var(--emerald-light);}
-        .partner-logo{max-height:44px;opacity:.5;filter:brightness(2) grayscale(1);transition:all .4s;}
-        .partner-logo:hover{opacity:1;filter:brightness(1) grayscale(0);}
-        .feature-icon-img{width:64px;height:64px;object-fit:contain;margin:0 auto 20px;display:block;filter:brightness(1.5);opacity:.7;}
-        .service-box:hover .feature-icon-img{opacity:1;filter:brightness(2);}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="AET Transportation services — TWIC escort, cruise terminal transport, airport transfers, executive limousines, shuttle service, and more in Houston and Galveston, Texas.">
+  <title>Services - AET Transportation</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/aet.css">
 </head>
 <body>
 
-<div id="loading" class="page-loader-wrapper">
-    <div class="loader">
-        <div class="m-t-30"><img class="zmdi-hc-spin" src="assets/images/loader.svg" width="48" height="48" alt="Loading"></div>
-        <p>AET Transportation</p>
+<div class="page-loader" id="pageLoader">
+  <div class="loader-ring"></div>
+  <div class="loader-text">AET Transportation</div>
+</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div id="cursor-dot" style="position:fixed;top:-4px;left:-4px;width:8px;height:8px;background:var(--emerald);border-radius:50%;pointer-events:none;z-index:100001;transition:width .25s,height .25s,background .25s;will-change:transform;"></div>
+<div id="cursor-ring" style="position:fixed;top:-20px;left:-20px;width:40px;height:40px;border:1px solid var(--emerald);border-radius:50%;pointer-events:none;z-index:100000;opacity:.4;will-change:transform;transition:width .35s,height .35s,opacity .35s,border-color .35s;"></div>
+
+<div id="top"></div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-sm-4">
+        <a href="index.html" class="logo d-block">
+          <img src="assets/images/logo.png" alt="AET Transportation">
+        </a>
+      </div>
+      <div class="col-lg-9 col-sm-8 d-none d-md-block">
+        <div class="header-info text-right">
+          <div><i class="zmdi zmdi-time"></i> Mon–Sun: 9:00 AM – 5:00 PM &nbsp;·&nbsp; <i class="zmdi zmdi-pin"></i> P.O. Box 3743, Humble, TX 77347 &nbsp;·&nbsp; <i class="zmdi zmdi-phone"></i> 281-436-0205</div>
+        </div>
+      </div>
     </div>
+  </div>
+</header>
+
+<nav class="site-nav" id="siteNav">
+  <div class="container">
+    <div class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="contact.html" class="nav-cta"><i class="zmdi zmdi-car"></i> Reserve Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ── INNER BANNER ── -->
+<section class="inner-banner" style="background-image:url(assets/images/services-bg.jpg);">
+  <div class="container">
+    <span class="inner-banner-eyebrow">What We Offer</span>
+    <h1 class="inner-banner-title">Everywhere <strong>You Need to Go.</strong></h1>
+  </div>
+</section>
+
+<!-- ── SERVICE BLOCK 1: DIRECT EXPRESS ── -->
+<div class="service-block" style="background-image:url(assets/images/slide2.jpg);">
+  <div class="container">
+    <div class="service-block-content" data-aos="fade-right">
+      <span class="section-eyebrow">Transportation Services</span>
+      <h2 class="content-heading" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;">Direct Express <strong style="font-style:italic;color:var(--rose-light);font-weight:400;">Transportation</strong></h2>
+      <div class="section-divider"></div>
+      <p style="font-size:1rem;line-height:2;color:var(--white-70);font-weight:300;margin-bottom:32px;">Whether a hotel, a cruise, an airport or a special event, we can simplify your solution. AET Transportation provides reliable, professional direct express transportation throughout Houston, Galveston, and surrounding areas.</p>
+      <a href="contact.html" class="btn-aet"><span>Get Started</span></a>
+    </div>
+  </div>
 </div>
 
-<div class="wrapper">
-    <div class="main_header">
-        <header id="header">
-            <div class="container">
-                <div class="head">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-sm-5">
-                            <div class="left">
-                                <a href="index.html" class="navbar-brand"><img src="https://www.aetdirectexpress.com/wp-content/uploads/2024/11/thumbnail_AET-Website-Logo-2.png" alt="AET Transportation" style="max-height:52px;"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-7">
-                            <div class="text-right d-none d-md-block">
-                                <p class="col-white m-b-0 p-t-5"><i class="zmdi zmdi-time"></i> Mon–Sun: 9:00 AM – 5:00 PM</p>
-                                <p class="col-white m-b-0"><i class="zmdi zmdi-pin"></i> P.O. Box 3743, Humble, TX 77347 &nbsp;&nbsp; <i class="zmdi zmdi-phone"></i> 281-436-0205</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+<!-- ── SERVICE BLOCK 2: TWIC ESCORT ── -->
+<div class="service-block reverse" style="background-image:url(assets/images/slide3.jpg);">
+  <div class="container">
+    <div class="service-block-content" data-aos="fade-left">
+      <span class="section-eyebrow">Port Access Services</span>
+      <h2 class="content-heading" style="font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;">TWIC Escort <strong style="font-style:italic;color:var(--rose-light);font-weight:400;">Service</strong></h2>
+      <div class="section-divider"></div>
+      <p style="font-size:1rem;line-height:2;color:var(--white-70);font-weight:300;margin-bottom:32px;">AET Transportation is authorized and licensed to provide TWIC escort services for easy access for contractors and other personnel. We offer TWIC Escort services to surveyors, freight forwarders, insurance representatives, or exporter/importers who need to examine cargo being loaded or unloaded at the port.</p>
+      <a href="contact.html" class="btn-aet"><span>Get Started</span></a>
+    </div>
+  </div>
+</div>
 
-        <div id="navbar">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                            data-target="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+<!-- ── ALL SERVICES GRID ── -->
+<section class="section section-alt">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="row mb-5">
+      <div class="col-12 text-center" data-aos="fade-up">
+        <span class="section-eyebrow">What We Offer</span>
+        <h2 class="section-title">All Our <span>Services</span></h2>
+        <div class="section-divider center"></div>
+        <p class="section-lead center mt-3">Whether a hotel, a cruise, an airport or a special event, we can simplify your solution.</p>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <img src="assets/images/service-cruise.jpg" alt="Galveston Cruise Terminal" class="service-card-img">
+          <div class="service-card-body">
+            <div class="service-card-title">Galveston Cruise Terminal</div>
+            <a href="contact.html" class="service-card-link">Reserve Now</a>
+          </div>
         </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <img src="assets/images/service-airport.jpg" alt="Airport Transportation" class="service-card-img">
+          <div class="service-card-body">
+            <div class="service-card-title">Airport Transportation</div>
+            <p class="service-card-text">Houston Hobby and Bush International Airport</p>
+            <a href="contact.html" class="service-card-link">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <img src="assets/images/service-corporate.jpg" alt="Executive Limousines" class="service-card-img">
+          <div class="service-card-body">
+            <div class="service-card-title">Executive Limousines Service for Corporate Events</div>
+            <a href="contact.html" class="service-card-link">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <img src="assets/images/service-twic.jpg" alt="TWIC Escort Service" class="service-card-img">
+          <div class="service-card-body">
+            <div class="service-card-title">TWIC Escort Service in Houston</div>
+            <a href="contact.html" class="service-card-link">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <img src="assets/images/service-shuttle.jpg" alt="Shuttle Service" class="service-card-img">
+          <div class="service-card-body">
+            <div class="service-card-title">Shuttle Service for Groups</div>
+            <a href="contact.html" class="service-card-link">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <img src="assets/images/service-proms.jpg" alt="Proms Nightouts Clubs" class="service-card-img">
+          <div class="service-card-body">
+            <div class="service-card-title">Proms / Nightouts / Clubs Limousine Service</div>
+            <a href="contact.html" class="service-card-link">Reserve Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ── -->
+<section class="cta-banner" style="background-image:url(assets/images/car-interior.jpg);">
+  <div class="container text-center" data-aos="fade-up">
+    <span class="section-eyebrow">Ready to Ride?</span>
+    <h2 class="cta-banner-title">Book Your <strong>Reservation</strong></h2>
+    <p style="color:var(--white-50);margin:12px 0 6px;"><i class="zmdi zmdi-phone" style="color:var(--emerald);margin-right:8px;"></i>Call: 281-436-0205</p>
+    <p style="color:var(--white-50);margin-bottom:32px;"><i class="zmdi zmdi-email" style="color:var(--emerald);margin-right:8px;"></i>customercare@aetdirectexpress.com</p>
+    <a href="contact.html" class="btn-aet"><span>Contact Us Today</span></a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cta" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="footer-cta-title">Ready for a <em>Smooth Journey?</em></div>
+          <div class="footer-cta-sub">Reserve your ride today — available 7 days a week.</div>
+        </div>
+        <div class="col-lg-7">
+          <form action="mailto:customercare@aetdirectexpress.com" method="post" enctype="text/plain">
+            <div class="row align-items-center">
+              <div class="col-md-4 mb-2 mb-md-0"><input type="text" placeholder="Your name" class="form-control"></div>
+              <div class="col-md-4 mb-2 mb-md-0"><input type="email" placeholder="Your email" class="form-control"></div>
+              <div class="col-md-4"><button type="submit" class="btn-aet w-100" style="justify-content:center;"><span>Reserve Now</span></button></div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
-    <!-- ========== INNER BANNER ========== -->
-    <section id="hero">
-        <div class="inner-banner" style="background-image:url(https://www.aetdirectexpress.com/wp-content/uploads/2019/02/services-cover-bg.jpg)">
-            <div class="container">
-                <div class="slider_text text-center">
-                    <p class="title">What We Offer<big>Everywhere <strong>You Need to Go.</strong></big></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-3 col-md-6 mb-5">
+        <div class="footer-logo"><img src="assets/images/logo-footer.jpg" alt="AET Transportation"></div>
+        <p style="font-size:.85rem;color:var(--white-30);font-weight:300;line-height:1.8;">Committed to offering a tailored transportation experience providing comfort, reliability, and competitive pricing.</p>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-5">
+        <div class="footer-col-title">Navigation</div>
+        <ul class="footer-col-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-col-links">
+          <li><a href="services.html">Galveston Cruise Terminal</a></li>
+          <li><a href="services.html">Airport Transportation</a></li>
+          <li><a href="services.html">TWIC Escort Service</a></li>
+          <li><a href="services.html">Executive Limousines</a></li>
+          <li><a href="services.html">Shuttle Service</a></li>
+          <li><a href="services.html">Proms &amp; Nightouts</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="footer-col-title">Houston &amp; Galveston, TX</div>
+        <div class="footer-contact-item"><span class="zmdi zmdi-pin"></span><span>P.O. Box 3743, Humble, TX 77347</span></div>
+        <div class="footer-contact-item"><span class="zmdi zmdi-phone"></span><span><a href="tel:2814360205">281-436-0205</a></span></div>
+        <div class="footer-contact-item"><span class="zmdi zmdi-phone"></span><span><a href="tel:2816748915">281-674-8915</a></span></div>
+        <div class="footer-contact-item"><span class="zmdi zmdi-email"></span><span><a href="mailto:customercare@aetdirectexpress.com">customercare@aetdirectexpress.com</a></span></div>
+        <div class="footer-contact-item"><span class="zmdi zmdi-time"></span><span>Monday – Sunday: 9:00 AM – 5:00 PM</span></div>
+      </div>
+    </div>
 
-    <!-- ========== CONTENT ========== -->
-    <section class="main-section">
-
-        <!-- Direct Express Transportation -->
-        <div style="background:linear-gradient(rgba(10,10,10,0.6),rgba(10,10,10,0.8)),url(https://www.aetdirectexpress.com/wp-content/uploads/2019/01/direct-express-transportation.jpg) center/cover no-repeat;padding:120px 0;">
-            <div class="container" data-aos="fade-up">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <span class="section-subtitle">Transportation Services</span>
-                        <h2 style="font-size:3rem !important;margin-bottom:20px;">Direct Express <strong style="color:var(--rose-light)!important;">Transportation</strong></h2>
-                        <p>Whether a hotel, a cruise, an airport or a special event, we can simplify your solution. AET Transportation provides reliable, professional direct express transportation throughout Houston, Galveston, and surrounding areas.</p>
-                        <a href="contact.html" class="btn btn-primary btn-round" style="margin-top:20px;">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- TWIC Escort Service -->
-        <div style="background:linear-gradient(rgba(10,10,10,0.6),rgba(10,10,10,0.8)),url(https://www.aetdirectexpress.com/wp-content/uploads/2019/01/twic-excort-services.jpg) center/cover no-repeat;padding:120px 0;">
-            <div class="container" data-aos="fade-up">
-                <div class="row justify-content-end">
-                    <div class="col-lg-6">
-                        <span class="section-subtitle">Port Access Services</span>
-                        <h2 style="font-size:3rem !important;margin-bottom:20px;">TWIC Escort <strong style="color:var(--rose-light)!important;">Service</strong></h2>
-                        <p>AET Transportation is authorized and licensed to provide TWIC escort services for easy access for contractors and other personnel. We offer TWIC Escort services to surveyors, freight forwarders, insurance representatives, or exporter/importers who need to examine cargo being loaded or unloaded at the port.</p>
-                        <a href="contact.html" class="btn btn-primary btn-round" style="margin-top:20px;">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- All 6 Services Grid -->
-        <div class="our-best-service xl-slategray section-65-100">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title col-12" data-aos="fade-up">
-                        <span class="section-subtitle">Complete Transportation Solutions</span>
-                        <h2>All Our <span>Services</span></h2>
-                        <div class="section-divider"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="service-box" style="padding:0 !important;overflow:hidden;">
-                            <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/03/galveston-cruise-terminal-cover.jpg" alt="Galveston Cruise Terminal" style="width:100%;height:200px;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0;display:block;">
-                            <div style="padding:28px 24px 24px;">
-                                <div class="service-name">Galveston Cruise Terminal</div>
-                                <div class="service-dep">
-                                    <p>Premium transfers to and from Galveston cruise terminals. All major cruise lines served including Carnival, Royal Caribbean, and more.</p>
-                                    <a href="contact.html">Reserve Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-box" style="padding:0 !important;overflow:hidden;">
-                            <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/03/executive-limousines-service-corporate-events-cover.jpg" alt="Airport Transportation" style="width:100%;height:200px;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0;display:block;">
-                            <div style="padding:28px 24px 24px;">
-                                <div class="service-name">Airport Transportation</div>
-                                <div class="service-dep">
-                                    <p>Reliable door-to-door service to Houston Hobby and George Bush International Airport (IAH). On-time, every time.</p>
-                                    <a href="contact.html">Reserve Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-box" style="padding:0 !important;overflow:hidden;">
-                            <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/03/executive-limousines-service-corporate-events-cover-1.jpg" alt="Executive Limousines" style="width:100%;height:200px;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0;display:block;">
-                            <div style="padding:28px 24px 24px;">
-                                <div class="service-name">Executive Limousines Service for Corporate Events</div>
-                                <div class="service-dep">
-                                    <p>Arrive in style for corporate events, meetings, and business travel. Professional, discreet executive transportation.</p>
-                                    <a href="contact.html">Reserve Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="0">
-                        <div class="service-box" style="padding:0 !important;overflow:hidden;">
-                            <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/03/twic-escort-service-houston-cover.jpg" alt="TWIC Escort" style="width:100%;height:200px;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0;display:block;">
-                            <div style="padding:28px 24px 24px;">
-                                <div class="service-name">TWIC Escort Service in Houston</div>
-                                <div class="service-dep">
-                                    <p>Authorized TWIC escort services for surveyors, freight forwarders, and personnel needing port access in Houston and Galveston.</p>
-                                    <a href="contact.html">Reserve Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-box" style="padding:0 !important;overflow:hidden;">
-                            <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/03/shuttle-service-groups-cover.jpg" alt="Shuttle Service" style="width:100%;height:200px;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0;display:block;">
-                            <div style="padding:28px 24px 24px;">
-                                <div class="service-name">Shuttle Service for Groups</div>
-                                <div class="service-dep">
-                                    <p>Group shuttle transportation with 15-passenger vans and wheelchair accessible vehicles for every type of group travel.</p>
-                                    <a href="contact.html">Reserve Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-box" style="padding:0 !important;overflow:hidden;">
-                            <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/03/proms-nightouts-clubs-limousine-service-cover.jpg" alt="Proms Nightouts" style="width:100%;height:200px;object-fit:cover;border-radius:var(--r-lg) var(--r-lg) 0 0;display:block;">
-                            <div style="padding:28px 24px 24px;">
-                                <div class="service-name">Proms/Nightouts/Clubs Limousine Service</div>
-                                <div class="service-dep">
-                                    <p>Arrive in style for proms, nightouts, and special events. Luxury limousine service for your most memorable occasions.</p>
-                                    <a href="contact.html">Reserve Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center" style="margin-top:40px;"><a href="contact.html" class="btn btn-primary btn-round">Book a Ride Now</a></div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- ========== FOOTER ========== -->
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form" data-aos="fade-up">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5 d-none d-lg-block">
-                                <h4 style="font-family:var(--font-display);color:var(--white);font-size:1.8rem;font-weight:300;margin:0;">Ready for a <em style="color:var(--rose-light);">Smooth Journey?</em></h4>
-                                <p style="color:var(--white-30);margin:8px 0 0;font-size:.88rem;font-weight:300;">Reserve your ride today.</p>
-                            </div>
-                            <div class="col-lg-7 col-md-12">
-                                <form class="contact-form" action="mailto:customercare@aetdirectexpress.com" method="post" enctype="text/plain">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-4"><div class="form-group m-b-0"><input type="text" placeholder="Your name" class="form-control"></div></div>
-                                        <div class="col-md-4"><div class="form-group m-b-0"><input type="email" placeholder="Your email" class="form-control"></div></div>
-                                        <div class="col-md-4"><button class="btn btn-primary btn-round btn-block margin-0">Book Now</button></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-3 col-md-6">
-                    <div class="fcard links">
-                        <img src="https://www.aetdirectexpress.com/wp-content/uploads/2019/01/box-logo-blue.jpg" alt="AET Transportation" style="max-height:60px;margin-bottom:16px;">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="fcard links">
-                        <h5 class="title">Navigation</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="fcard links">
-                        <h5 class="title">Services</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="services.html">Galveston Cruise Terminal</a></li>
-                            <li><a href="services.html">Airport Transportation</a></li>
-                            <li><a href="services.html">TWIC Escort</a></li>
-                            <li><a href="services.html">Shuttle Service</a></li>
-                            <li><a href="services.html">Executive Limousines</a></li>
-                            <li><a href="services.html">Proms &amp; Nightouts</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="fcard links">
-                        <h5 class="title">Houston &amp; Galveston, TX</h5>
-                        <p style="color:var(--white-50);font-size:.9rem;margin-bottom:6px;"><i class="zmdi zmdi-pin"></i> P.O. Box 3743, Humble, TX 77347</p>
-                        <p style="color:var(--white-50);font-size:.9rem;margin-bottom:6px;"><i class="zmdi zmdi-phone"></i> 281-436-0205</p>
-                        <p style="color:var(--white-50);font-size:.9rem;margin-bottom:6px;"><i class="zmdi zmdi-email"></i> customercare@aetdirectexpress.com</p>
-                        <p style="color:var(--white-50);font-size:.9rem;margin-bottom:0;"><i class="zmdi zmdi-time"></i> Mon–Sun: 9:00 AM – 5:00 PM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-8"><small>&copy; 2026 AET Transportation. All Rights Reserved.</small></div>
-                    <div class="col-lg-2 col-md-2 text-center"><div class="up"><a href="#header"><i class="zmdi zmdi-caret-up-circle"></i></a></div></div>
-                    <div class="col-lg-2 col-md-2"></div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2026 AET Transportation. All Rights Reserved.</div>
+      <a href="#top" class="footer-back-top"><i class="zmdi zmdi-chevron-up"></i></a>
+    </div>
+  </div>
+</footer>
 
 <script src="assets/bundles/libscripts.bundle.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/premium.js"></script>
+<script src="assets/plugins/aos/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true, offset: 80 });
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('pageLoader');
+  if(loader) { setTimeout(() => loader.classList.add('hidden'), 400); }
+});
+
+const prog = document.getElementById('scrollProgress');
+if(prog) {
+  window.addEventListener('scroll', () => {
+    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    prog.style.width = pct + '%';
+  });
+}
+
+const nav = document.getElementById('siteNav');
+if(nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+}
+
+const dot = document.getElementById('cursor-dot');
+const ring = document.getElementById('cursor-ring');
+if(dot && ring && window.innerWidth >= 992) {
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot.style.left=(mx-4)+'px'; dot.style.top=(my-4)+'px'; });
+  (function tick(){rx+=(mx-rx)*.12; ry+=(my-ry)*.12; ring.style.left=(rx-20)+'px'; ring.style.top=(ry-20)+'px'; requestAnimationFrame(tick);})();
+  document.querySelectorAll('a,button,.btn-aet,.service-card,.feature-box').forEach(el => {
+    el.addEventListener('mouseenter',()=>{dot.style.width='14px';dot.style.height='14px';dot.style.background='var(--rose)';ring.style.width='60px';ring.style.height='60px';ring.style.borderColor='var(--rose)';});
+    el.addEventListener('mouseleave',()=>{dot.style.width='8px';dot.style.height='8px';dot.style.background='var(--emerald)';ring.style.width='40px';ring.style.height='40px';ring.style.borderColor='var(--emerald)';});
+  });
+}
+</script>
 </body>
 </html>
